@@ -371,11 +371,34 @@ body {
   border-radius: 4px;
   letter-spacing: 0.5px; }
   .form__button--load {
-    background: #121232;
+    background-color: #121232;
     color: #EEE0E0;
-    border: 0; }
+    border: 0;
+    -webkit-transition: background-color 1s linear .2s, color 1s linear .2s, -webkit-transform 1s linear .2s;
+    transition: background-color 1s linear .2s, color 1s linear .2s, -webkit-transform 1s linear .2s;
+    -o-transition: background-color 1s linear .2s, color 1s linear .2s, transform 1s linear .2s;
+    transition: background-color 1s linear .2s, color 1s linear .2s, transform 1s linear .2s;
+    transition: background-color 1s linear .2s, color 1s linear .2s, transform 1s linear .2s, -webkit-transform 1s linear .2s; }
+    .form__button--load:hover {
+      background: #EEE0E0;
+      color: #121232;
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
   .form__button--save {
     background-color: #EEE0E0;
-    border: 0; }
+    color: #121232;
+    border: 0;
+    -webkit-transition: background-color 1s linear .2s, color 1s linear .2s,  -webkit-transform 1s linear .2s;
+    transition: background-color 1s linear .2s, color 1s linear .2s,  -webkit-transform 1s linear .2s;
+    -o-transition: background-color 1s linear .2s, color 1s linear .2s,  transform 1s linear .2s;
+    transition: background-color 1s linear .2s, color 1s linear .2s,  transform 1s linear .2s;
+    transition: background-color 1s linear .2s, color 1s linear .2s,  transform 1s linear .2s, -webkit-transform 1s linear .2s; }
+    .form__button--save:hover {
+      background: #121232;
+      color: #EEE0E0;
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
 
 /*# sourceMappingURL=main.css.map */
